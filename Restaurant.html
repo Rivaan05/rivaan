@@ -4,19 +4,118 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Spice Haven</title>
-  <link rel="stylesheet" href="styles.css" />
+ </head>
+<body>
+ <header>
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #fff3cd, #ffe5d9);
+      color: #333;
+    }
+
+    header {
+      background: tomato;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      text-align: center;
+      background: #ff7043;
+      padding: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .menu-section {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .menu-section h2 {
+      color: #d84315;
+      margin-bottom: 20px;
+      font-size: 26px;
+      border-bottom: 2px solid #ff7043;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .item {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .item:hover {
+      transform: scale(1.05);
+    }
+
+    .item h3 {
+      margin: 10px 0;
+      color: #ff5722;
+    }
+
+    .price {
+      color: green;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
-  <header>
+
     <nav>
       <h1>Spice Haven</h1>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#menu">Starters</a></li>
+        <li><a href="#menu">Main course</a></li>
+       <li><a href="#menu">Desserts</a></li>
+       <li><a href="#menu">Drinks</a></li>
       </ul>
     </nav>
   </header>
+<section="menu" id="Starters">
+<h1>starters</h1>
+</h1>
+<h1> Dry Manchurian</h1>
+<div class="menu-items">
+<div class="items">
+<p> Deep-frying vegetable balls that are coated in a spicy Manchurian sauce. </p>
+<p>₹149</p>
+</div>
 
   <section id="home" class="hero">
     <h2>Authentic Flavors, Unforgettable Experience</h2>
@@ -24,7 +123,7 @@
     <a href="#menu" class="btn">Explore Menu</a>
   </section>
 
-  <section id="menu" class="menu">
+  <section id="Main Course" class="Main Course">
     <h2>Our Signature Dishes</h2>
     <div class="menu-items">
       <div class="item">
@@ -47,8 +146,11 @@
     <p>123 Camp, Pune, MH</p>
     <p>Call: +91 98765 43210</p>
     <p>Email: hello@spicehaven.in</p>
-  </section>
-
+ 
+     <h2>2nd Branch</h2>
+     <p>789 Koregaon Park, Pune, MH</p>
+     <p>Call: +91 98116 00354</p>
+   </section>
   <footer>
     <p>&copy; 2025 Spice Haven. All rights reserved.</p>
   </footer>
