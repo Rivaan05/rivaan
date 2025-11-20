@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .quiz-box {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .question {
+      margin-bottom: 15px;
+    }
+    .options label {
+      display: block;
+      margin: 5px 0;
+      cursor: pointer;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 15px;
+      border: none;
+      background: #007BFF;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Quick Quiz</h1>
+  <div class="quiz-box">
+    <div class="question">
+      <p>1) What does HTML stand for?</p>
+      <div class="options">
+        <label><input type="radio" name="q1" value="a"> Hyperlinks and Text Markup Language</label>
+        <label><input type="radio" name="q1" value="b"> HyperText Markup Language</label>
+        <label><input type="radio" name="q1" value="c"> Home Tool Markup Language</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>2) Which CSS property changes text color?</p>
+      <div class="options">
+        <label><input type="radio" name="q2" value="a"> font-color</label>
+        <label><input type="radio" name="q2" value="b"> text-color</label>
+        <label><input type="radio" name="q2" value="c"> color</label>
+      </div>
+    </div>
+
+<div class="question">
+      <p>3) World's best javelin throw? </p>
+      <div class="options">
+        <label><input type="radio" name="q2" value="a"> Jan Železný </label>
+        <label><input type="radio" name="q2" value="b"> Neeraj Chopda </label>
+        <label><input type="radio" name="q2" value="c"> Johannes Vetter </label>
+      </div>
+    </div>
+
+
+<div class="question">
+      <p>4) World best Car company? </p>
+      <div class="options">
+        <label><input type="radio" name="q2" value="a"> Volkswagen Group </label>
+        <label><input type="radio" name="q2" value="b"> Mercedes-Benz </label>
+        <label><input type="radio" name="q2" value="c"> Toyota </label>
+      </div>
+    </div>
+
+<div class="question">
+      <p>5)Who was the first President of the United States?
+</p>
+      <div class="options">
+        <label><input type="radio" name="q2" value="a">- Abraham Lincoln </label>
+        <label><input type="radio" name="q2" value="b">George Washington </label>
+        <label><input type="radio" name="q2" value="c">Thomas Jefferson</label>
+      </div>
+    </div>
+
+<div class="question">
+      <p>6) Which is the largest desert in the world?</p>
+      <div class="options">
+        <label><input type="radio" name="q2" value="a"> Gobi</label>
+        <label><input type="radio" name="q2" value="b"> Sahara
+ </label>
+        <label><input type="radio" name="q2" value="c"> Antarctic Desert </label>
+      </div>
+    </div>
+
+<div class="question">
+      <p>7) - Who wrote Romeo and Juliet?
+</p>
+      <div class="options">
+        <label><input type="radio" name="q2" value="a">William Shakespeare </label>
+        <label><input type="radio" name="q2" value="b"> - Jane Austen </label>
+        <label><input type="radio" name="q2" value="c"> - Charles Dickens </label>
+      </div>
+    </div>
+
+
+    <button onclick="checkAnswers()">Submit</button>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    function checkAnswers() {
+      let score = 0;
+      if (document.querySelector('input[name="q1"]:checked')?.value === 'b') score++;
+      if (document.querySelector('input[name="q2"]:checked')?.value === 'c') score++;
+      document.getElementById('result').textContent = "You scored " + score + "/7";
+    }
+  </script>
+</body>
+</html>
