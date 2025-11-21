@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Club</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      line-height: 1.6;
+    }
+
+    /* Navigation bar */
+    nav {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 15px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #1abc9c;
+    }
+
+    /* Hero section */
+    header {
+      background: url('https://images.unsplash.com/photo-1517649763962-0c623066013b') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    /* Content sections */
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      width: 250px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#sports">Sports</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home">
+    <h1>Welcome to Our Sports Club</h1>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a community-driven sports club offering facilities for football, basketball, tennis, and more. Join us to stay fit and have fun!</p>
+  </section>
+
+  <!-- Sports Section -->
+  <section id="sports">
+    <h2>Our Sports</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d" alt="Football">
+        <h3>Football</h3>
+        <p>Weekly matches and training sessions for all age groups.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b" alt="Basketball">
+        <h3>Basketball</h3>
+        <p>Indoor and outdoor courts available for practice and tournaments.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517964603305-11c1f3b6d5f6" alt="Tennis">
+        <h3>Tennis</h3>
+        <p>Professional coaching and friendly matches every weekend.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@sportsclub.com | Phone: +91 98765 43210</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sports Club. All rights reserved.</p>
+  </footer>
+</body>
+</html>
