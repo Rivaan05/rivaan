@@ -1,0 +1,60 @@
+<html>
+<head>
+  <title>Light Bulb Toggle</title>
+  <style>
+    body {
+      background-color: #e0f7fa;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    img {
+      width: 500px;
+      margin: 40px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .on-btn {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+    }
+
+    .off-btn {
+      background-color: #f44336;
+      color: white;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💡 Light ON / OFF Bulb</h1>
+  <img id="bulb" src="https://cdn1.byjus.com/wp-content/uploads/2021/05/word-image7.png" alt="Light Bulb">
+  <br>
+  <button class="on-btn" onclick="turnOn()">ON</button>
+  <button class="off-btn" onclick="turnOff()">OFF</button>
+
+  <script>
+    function turnOn() {
+      document.getElementById('bulb').src = "https://laughingsquid.com/wp-content/uploads/2018/01/levitating-light-bulb.gif?";
+    }
+
+    function turnOff() {
+      document.getElementById('bulb').src = "https://tse1.mm.bing.net/th/id/OIP.fbD8hiZC8m3luL2px0AHigHaH_?rs=1&pid=ImgDetMain&o=7&rm=3";
+    }
+  </script>
+
+</body>
+</html>
